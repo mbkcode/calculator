@@ -1,0 +1,102 @@
+:root {
+	--background: #f6f6f6;
+	--font: #222;
+	--border: #333;
+	--screen: #eee;
+	--calculator: #aaa;
+	--btn: #eee;
+	--btn-hover: #ddd;
+	--btn-active: #ccc;
+	--btn-red: #faa;
+	--btn-red-hover: #e99;
+	--btn-red-active: #d88;
+	--btn-blue: #aaf;
+	--btn-blue-hover: #99e;
+	--btn-blue-active: #88d;
+}
+
+.container {
+	width: 400px;
+	border: 2px var(--border) solid;
+	border-radius: 15px;
+	padding: 20px;
+	background-color: var(--calculator);
+	margin: auto;
+}
+
+.buttons {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	height: 100%;
+	grid-gap: 0.5rem;
+	padding: 1rem;
+	background: #212121;
+	border-bottom-right-radius: 1rem;
+	border-bottom-left-radius: 1rem;
+}
+
+.btn {
+	padding: 20px;
+	border: 2px var(--border) solid;
+	border-radius: 5px;
+	background-color: var(--btn);
+	font-size: 20px;
+	cursor: pointer;
+}
+
+.span-2 {
+	grid-column: span 2;
+}
+
+.screen {
+	padding: 10px 20px;
+	border: 2px var(--border) solid;
+	border-radius: 5px;
+	margin-bottom: 20px;
+	background-color: var(--screen);
+	text-align: right;
+	word-wrap: break-word;
+	word-break: break-all;
+}
+
+.screen-last {
+	min-height: 32px;
+	font-size: 20px;
+}
+
+.screen-current {
+	min-height: 64px;
+	font-size: 40px;
+}
+
+.btn:hover {
+	background-color: var(--btn-hover);
+}
+
+.btn:active {
+	background-color: var(--btn-active);
+}
+
+.btn-red {
+	background-color: var(--btn-red);
+}
+
+.btn-red:hover {
+	background-color: var(--btn-red-hover);
+}
+
+.btn-red:active {
+	background-color: var(--btn-red-active);
+}
+
+.btn-blue {
+	background-color: var(--btn-blue);
+}
+
+.btn-blue:hover {
+	background-color: var(--btn-blue-hover);
+}
+
+.btn-blue:active {
+	background-color: var(--btn-blue-active);
+}
